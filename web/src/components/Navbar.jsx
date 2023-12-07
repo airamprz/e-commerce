@@ -31,51 +31,51 @@ const Navbar = () => {
 
   return (
     <nav className="bg-black">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between p-4">
         <div className="flex items-center">
           <img
             src="/logoetiqueta.png"
             alt="Logo de la página"
-            className="w-28 ml-10 py-1"
+            className="w-20"
           />
-          <ul className="flex space-x-4">
+          <ul className="hidden md:flex space-x-4 ml-12">
             <li>
-              <a
-                href="/"
-                className="text-white ml-10 hover:underline"
+              <Link
+                to="/"
+                className="text-white hover:underline mr-4"
                 style={{ fontSize: "13px" }}
               >
                 HOME
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/drop"
-                className="text-white ml-3 hover:underline"
+              <Link
+                to="/drop"
+                className="text-white hover:underline"
                 style={{ fontSize: "13px" }}
               >
                 DROP
-              </a>
+              </Link>
             </li>
             {user && user.role === "admin" && (
               <>
                 <li>
-                  <a
-                    href="/products"
-                    className="text-white ml-3 hover:underline"
+                  <Link
+                    to="/products"
+                    className="text-white hover:underline"
                     style={{ fontSize: "13px" }}
                   >
                     CREAR PRODUCTO
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/orders"
-                    className="text-white ml-3 hover:underline"
+                  <Link
+                    to="/orders"
+                    className="text-white hover:underline"
                     style={{ fontSize: "13px" }}
                   >
                     ORDENES
-                  </a>
+                  </Link>
                 </li>
               </>
             )}
@@ -99,19 +99,13 @@ const Navbar = () => {
           </span>
 
           <span className="text-white">
-            <Link
-              to={`/wishlist/${user ? user._id : ""}`}
-              className="flex items-center"
-            >
+            <Link to={`/wishlist/${user ? user._id : ""}`}>
               <i className="fas fa-heart" style={{ fontSize: "22px" }}></i>
             </Link>
           </span>
 
           <span className="text-white">
-            <Link
-              to={`/carts/${user ? user._id : ""}`}
-              className="flex items-center"
-            >
+            <Link to={`/carts/${user ? user._id : ""}`}>
               <i
                 className="fas fa-shopping-bag"
                 style={{ fontSize: "22px" }}
@@ -121,7 +115,7 @@ const Navbar = () => {
 
           {user && (
             <span className="text-white">
-              <Link to="/profile" className="flex items-center">
+              <Link to="/profile">
                 <i className="fas fa-user" style={{ fontSize: "22px" }}></i>
               </Link>
             </span>
@@ -129,18 +123,18 @@ const Navbar = () => {
 
           {user ? (
             <span className="text-white">
-              <Link to="/logout" onClick={logout} className="flex items-center">
+              <Link to="/logout" onClick={logout}>
                 <i
-                  className="fas fa-power-off mr-10"
+                  className="fas fa-power-off"
                   style={{ fontSize: "22px" }}
                 ></i>
               </Link>
             </span>
           ) : (
             <span className="text-white">
-              <Link to="/login" className="flex items-center">
+              <Link to="/login">
                 <i
-                  className="fas fa-user mr-10"
+                  className="fas fa-user"
                   style={{ fontSize: "22px" }}
                 ></i>
               </Link>

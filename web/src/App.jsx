@@ -28,7 +28,7 @@ import SearchPage from "./pages/search/SearchPage";
 
 function App() {
   return (
-    <>
+    <div>
       <Navbar />
 
 
@@ -55,7 +55,7 @@ function App() {
       <EmailModal />
       <CookieMessage />
       <Footer />
-    </>
+    </div>
   );
 }
 

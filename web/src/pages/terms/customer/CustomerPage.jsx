@@ -18,7 +18,7 @@ const CustomerPage = () => {
       <p>elpuntoclothing@gmail.com</p>
       <p>
         También estamos disponibles para ayudarte a través de nuestras redes
-        sociales. Síguenos en [Enlaces a tus redes sociales] y envíanos un mensaje
+        sociales. Síguenos en @elpuntoclothing y envíanos un mensaje
         directo.
       </p>
       <p>

@@ -32,7 +32,7 @@ const ConditionsPage = () => {
       <p>
         Si tienes alguna pregunta sobre estos términos y condiciones, por favor
         contáctanos a través de nuestro formulario de contacto o enviando un
-        correo electrónico a [tu correo electrónico de contacto].
+        correo electrónico a elpuntoclothing@gmail.com.
       </p>
     </div>
   );

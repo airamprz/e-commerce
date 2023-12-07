@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Inter:wght@300&family=Londrina+Shadow&family=Pacifico&family=Play&family=Press+Start+2P&family=Roboto+Condensed&family=Roboto+Mono:wght@300&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
