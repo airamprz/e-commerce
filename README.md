@@ -1,4 +1,4 @@
-# E-Commerce Proyecto Final de IronHack
+# E-Commerce 
 
 ¡Bienvenido/a a mi proyecto final de IronHack!
 
